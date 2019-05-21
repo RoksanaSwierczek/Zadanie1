@@ -20,8 +20,13 @@
       <img class="mainLogo" src="googleLogo.png" alt="google">
         <div class="mainSearch">
             <i class="fas fa-search"></i>
-            <i class="fas fa-keyboard"></i>
-            <i class="fas fa-microphone"></i>
+			<input class="searchInput"/>
+            <i class="fas fa-keyboard  tooltip">
+				<span class="tooltiptext">Narzędzia do wprowadzania tekstu</span>
+			</i>
+            <i class="fas fa-microphone tooltip">
+				<span class="tooltiptext">Wyszukiwanie głosowe</span>
+			</i>
         </div>
         <div class="mainNavigation">
             <button class="mainNavigation-button mdc-button mdc-button--unelevated">Szukaj w Google</button>
@@ -29,18 +34,22 @@
         </div>
     </div>
 
-    <footer >
+    <footer class="footer">
          <div class="footerInfo">
             <p class="footerInfoCountry">Polska</p>
         </div>
-        <div class="footerInfo">
-            <a class="footerInfo-anchor footerInfo-anchor--left" href="https://ads.google.com">Reklamuj się</a>
-            <a class="footerInfo-anchor footerInfo-anchor--left" href="https://www.google.com/services">Dla firm</a>
-            <a class="footerInfo-anchor footerInfo-anchor--left" href="https://about.google/intl">O nas</a>
-            <a class="footerInfo-anchor footerInfo-anchor--right" href="https://policies.google.com/privacy">Prywatność</a>
-            <a class="footerInfo-anchor footerInfo-anchor--right" href="https://policies.google.com/terms">Warunki</a>
-            <a class="footerInfo-anchor footerInfo-anchor--right" href="https://www.google.com/preferences">Ustawienia</a>
+        <div class="footerInfo content">
+			<div class="footerLeft">
+				<a class="footerInfo-anchor footerInfo-anchor--left" href="https://ads.google.com">Reklamuj się</a>
+				<a class="footerInfo-anchor footerInfo-anchor--left" href="https://www.google.com/services">Dla firm</a>
+				<a class="footerInfo-anchor footerInfo-anchor--left" href="https://about.google/intl">O nas</a>
+            </div>
+			<div class="footerRight">
+				<a class="footerInfo-anchor footerInfo-anchor--right" href="https://policies.google.com/privacy">Prywatność</a>
+				<a class="footerInfo-anchor footerInfo-anchor--right" href="https://policies.google.com/terms">Warunki</a>
+				<a class="footerInfo-anchor footerInfo-anchor--right" href="https://www.google.com/preferences">Ustawienia</a>
         </div>
+		</div>
     </footer>
 
 
