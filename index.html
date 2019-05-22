@@ -24,7 +24,9 @@
       <img class="mainLogo" src="googleLogo.png" alt="google">
         <div class="mainSearch">
             <i class="fas fa-search"></i>
-			<input class="searchInput"/>
+			
+			<v-autocompleter :data="animals"></v-autocompleter>
+			<!--<input class="searchInput"/>-->
             <i class="fas fa-keyboard  tooltip">
 				<span class="tooltiptext">Narzędzia do wprowadzania tekstu</span>
 			</i>
@@ -56,8 +58,9 @@
 		</div>
     </footer>
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="animals.js"></script>
+<script src="autocompleter.js"></script>
 
 </body>
 </html>

@@ -42,12 +42,11 @@ body{
 
 .mainSearch {
     display: flex;
-    align-items: center;
+    align-items: start;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
-	height: 44px;
     width: 554px;
-    margin: 0 auto;
+    padding: 15px 0;
 	box-shadow: none;
 }
 
@@ -62,11 +61,35 @@ body{
 	height:85%;
 	width:80%;
 	border:none;
+	
 }
-
+ul{
+list-style:none;
+padding:0;
+}
+li:hover{
+	background-color:#eaeaea;
+}
+.mainSearch-input {
+    width: 456px;
+    
+}
 .searchInput:focus{
 	outline:none;
 	box-shadow:none;
+	margin: auto;
+}
+
+.v-autocompleter-input {
+    border: none;
+    margin-left: 20px;
+    width: 100%;
+	outline:none;
+}
+
+
+.v-autocompleter {
+    width: 100%;
 }
 
 .fa-search {
