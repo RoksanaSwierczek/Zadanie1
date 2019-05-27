@@ -1,14 +1,16 @@
 Vue.component('v-autocompleter', {
     template: `
         <div class="v-autocompleter">
-            <input class="v-autocompleter-input" type="text" v-model="input">
-				<ul v-if="input.length > 0">
-					
+            <input class="v-autocompleter-input" type="text" v-model="input">	
+				<ul v-if="input.length > 0">	
+				<div class="space">
+				</div>
                     <li v-for="animal in data">
+						<div> <span>
 						{{ animal }}
+						</span>
+						</div>
                     </li>
-					
-           
             </ul>
             </div>
     `
@@ -35,5 +37,4 @@ Vue.component('v-autocompleter', {
 
 new Vue ({
     el: ".mainSearch",
-	
 })
